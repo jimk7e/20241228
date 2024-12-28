@@ -1,7 +1,9 @@
 name: Run Python
 on: 
     push:
-
+    schedule:
+    - cron: 0 0 * * *
+    
 jobs:
     build:
         name:  run py1
